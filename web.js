@@ -1,5 +1,5 @@
 var fs = require('fs');
-var buf = new Buffer(fs.readFileSync('file.html'),'utf-8');
+var buf = new Buffer(fs.readFileSync('index.html'),'utf-8');
 
 /*
 var buffer = fs.readFile('index.html', function (err, data){

@@ -12,8 +12,6 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href='//fonts.googleapis.com/css?family=Ubuntu:300normal,300italic,400normal,400italic,500normal,500italic,700normal,700italic|Open+Sans:400normal|Droid+Sans:400normal|Lobster:400normal|Lato:400normal|PT+Sans:400normal|Arvo:400normal|PT+Serif:400normal|Vollkorn:400normal|Old+Standard+TT:400normal|Josefin+Slab:400normal&subset=all' rel='stylesheet' type='text/css'>
 
-    
-    
 <style type="text/css">
   /* Large desktop */
   @media (min-width: 980px) {
@@ -122,13 +120,69 @@
     </div>
   </div>
 
+<!-- We use raw-fluid inside containers to achieve a resizable layout. -->
+<div class="container">
+    <div class="row-fluid heading">
+      <div class="span12">
+        <h1>Product</h1>
+      </div>
+    </div>
+    <div class="row-fluid subheading">
+      <div class="span12">
+        <p class="lead">One sentence description. </p>
+      </div>
+    </div>
+    <div class="row-fluid pitch">
+      <div class="span5 offset1 video">
+        <img class="img-polaroid" src="http://placehold.it/480x300">
+      </div>
+      <!-- We define a new 'actions' div to contain statistics, order, and share buttons -->
+      <div class="span5 actions">
+        <div class="span8 offset2">
+          <div class="statistics">
+            <div class="span4">
+              <!-- linediev-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries-->
+                <div class="linediv-l">
+                  <h3>1000</h3> <p>backers</p>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="linediv-r">
+                  <h3>$6000</h3> <p>of $10,000</p>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="linediv-r">
+                  <h3>10</h3> <p>days left</p>
+                </div>
+            </div>
+          </div> <!--statistics -->
+        </div> <!-- span8 offset2 -->
+        <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width:60%"></div>
+              <div class="bar bar-warning" style="width:40%"></div>
+            </div>
+        </div><!-- span10 offset1-->      
+        <div class="span6 offset3 order">
+          <button class="btn btn-success btn-large">Preorder</button>
+        </div>
+        <div class="span8 offset2 social">
+          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+        </div>
+      </div> <!--span5 actions -->
+    </div> <!-- row fluid pitch -->
+
+</div><!--container -->
 
 
-
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
+<!--     
+  <div class="container">
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Product</h1>
         </div>
         <div class="span6 blank">
           Blank
@@ -184,6 +238,6 @@
         </div>
       </div>
     </div>
-  
+   -->
 
 </body></html>
